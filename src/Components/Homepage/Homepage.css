@@ -1,0 +1,14 @@
+.filterButton{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+.filterButton:active{
+    color: black;
+}
+.filterButton:focus{
+    background:green;
+    color: white;
+}
+
+
