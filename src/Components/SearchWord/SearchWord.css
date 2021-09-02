@@ -12,14 +12,13 @@ body{
 }
 
 .searchTerm {
-  width: 100%;
-  border: 3px solid black;
+  width: 25%;
+  border: 1px solid black;
   border-right: none;
-  padding: 5px;
-  height: 50px;
+  padding: 11px;
+  height: 50;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
 }
 
 .searchTerm:focus{
@@ -27,15 +26,15 @@ body{
 }
 
 .searchButton {
-  width: 78px;
-  height: 50px;
+  width: 80px;
   border: 1px solid black;
-  background:black;
+  background: black;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+  padding: 7px;
 }
 
 /*Resize the wrap to see the search bar change!*/
