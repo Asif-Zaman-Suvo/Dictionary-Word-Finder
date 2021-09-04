@@ -7,6 +7,11 @@ const DataFetch = () => {
     const [definitions, setDefinitions] = useState([]);
     const { handleSubmit, register } = useForm();
 
+    const handleAddFavourite=(item)=>{
+        console.log('add to favorites', item)
+
+    }
+
     const getDefinition = (data) => {
         const searchWord = {
             word: data.word,
@@ -49,7 +54,7 @@ const DataFetch = () => {
 
             <div style={{ marginLeft: "100px" }} className="row mt-5 pt-5">
                 {
-                    definitions.map(item => <Words item={item}></Words>)
+                    definitions.map(item => <Words handleAddFavourite={handleAddFavourite} item={item}></Words>)
                 }
             </div>
         </div>
