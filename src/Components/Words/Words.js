@@ -32,7 +32,7 @@ const Words = ({item}) => {
                         <p style={{ color: '#280137' }}>Emoji : {item.emoji}</p>
                     </Card.Text>
 
-                    <button onClick={()=>handleAddFavourite(item)} type="submit" variant="success">Add To Favourite</button>
+                    <button onClick={()=>handleAddFavourite(item)} type="button" className="btn btn-success">Add To Favourite</button>
 
                     {/* onClick={() => props.handleAddFavourite(props.item)} */}
                 </Card.Body>

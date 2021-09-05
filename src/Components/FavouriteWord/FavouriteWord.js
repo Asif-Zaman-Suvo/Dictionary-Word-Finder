@@ -5,7 +5,7 @@ const FavouriteWord = ({item}) => {
     return (
         <div className='col-md-4 mt-5'>
 
-            <Card className="wordCard" style={{ width: '20em', height: 'auto', backgroundColor: '#8ACAE7' }}>
+            <Card className="wordCard" style={{ width: '20em', height: 'auto', backgroundColor: '#BADA55' }}>
                 <Card.Img variant="top" src={item.image_url} />
                 <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title>
