@@ -16,16 +16,17 @@ export const UserFavourite = createContext();
 
 function App() {
   const [favourites, setFavourites] = useState([]);
-  
-  
-  useEffect(() =>{
- const my = localStorage.getItem('favourites')
-    if (my){
-      setFavourites(my)
 
+
+  useEffect(() => {
+    const my =  JSON.parse(localStorage.getItem("favourites"));
+
+    if (my) {
+      setFavourites(my)
+     
     }
-      
-  },[])
+
+  }, [])
 
   return (
     <UserFavourite.Provider value={[favourites, setFavourites]}>

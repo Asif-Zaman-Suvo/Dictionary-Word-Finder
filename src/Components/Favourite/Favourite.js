@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { UserFavourite } from '../../App';
+import FavouriteWord from '../FavouriteWord/FavouriteWord';
 import Homepage from '../Homepage/Homepage';
 
 const Favourite = () => {
@@ -22,6 +23,12 @@ const Favourite = () => {
                 <option>Conjunction</option>
                 <option>Interjection</option>
             </select>
+
+            <div style={{ marginLeft: "100px" }} className="row mt-5 pt-5">
+                {
+                    favourites.map(item => <FavouriteWord key={item.key} item={item}></FavouriteWord>)
+                }
+            </div>
            
         </section>
     );
