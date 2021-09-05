@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { UserFavourite } from '../../App';
 import Words from '../Words/Words';
 
 const DataFetch = () => {
@@ -7,10 +8,7 @@ const DataFetch = () => {
     const [definitions, setDefinitions] = useState([]);
     const { handleSubmit, register } = useForm();
 
-    const handleAddFavourite=(item)=>{
-        console.log('add to favorites', item)
 
-    }
 
     const getDefinition = (data) => {
         const searchWord = {
@@ -54,7 +52,7 @@ const DataFetch = () => {
 
             <div style={{ marginLeft: "100px" }} className="row mt-5 pt-5">
                 {
-                    definitions.map(item => <Words handleAddFavourite={handleAddFavourite} item={item}></Words>)
+                    definitions.map(item => <Words key={item.key} item={item}></Words>)
                 }
             </div>
         </div>
